@@ -13,15 +13,18 @@ tasks:
   serve:
     desc: Start the documentation server locally
     cmds:
+      - task: clean
       - cmd: npm run docs:dev
 
   build:
     desc: Build the documentation
     cmds:
+      - task: clean
       - cmd: npm run docs:build
 
   preview:
     desc: Preview built documentation
     cmds:
+      - task: clean
       - cmd: npm run docs:build
       - cmd: npm run docs:preview

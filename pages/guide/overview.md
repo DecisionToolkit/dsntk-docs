@@ -37,6 +37,6 @@ Please visit the [Installation](installation) chapter to learn how to install or
 
 ## Project status
 
-&#8203;<DsntkName/> is production ready, although there are still some features that may be subject
-to change or refinement, based on testing and user feedback. We welcome users to try &#8203;<DsntkName/>
-out and provide feedback or suggestions to improve its usability or performance.
+&#8203;<DsntkName/> is production-ready, although some features might still be subject
+to change or refinement based on testing and user feedback. We welcome users to try
+&#8203;<DsntkName/> out and provide feedback or suggestions to improve its usability or performance.

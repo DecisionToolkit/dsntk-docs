@@ -6,7 +6,7 @@ hero:
   text: "Decision Toolkit"
   tagline: "build, test & execute decision models"
   image:
-    src: /decision-toolkit.svg
+    src: /images/decision-toolkit.svg
     alt: "Decision Toolkit"
   actions:
     - theme: brand

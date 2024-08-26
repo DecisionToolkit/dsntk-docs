@@ -4,9 +4,9 @@ export default defineConfig({
   lang: 'en-US',
   title: "Decision Toolkit",
   description: "Decision Toolkit",
-  head: [['link', { rel: 'icon', href: '/decision-toolkit-small.svg' }]],
+  head: [['link', { rel: 'icon', href: '/images/decision-toolkit-small.svg' }]],
   themeConfig: {
-    logo: '/decision-toolkit-small.svg',
+    logo: '/images/decision-toolkit-small.svg',
     nav: [
       {text: 'Home', link: '/' },
       {
