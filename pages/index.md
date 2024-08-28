@@ -6,7 +6,7 @@ hero:
   text: "Decision Toolkit"
   tagline: "build, test & execute decision models"
   image:
-    src: /images/decision-toolkit.svg
+    src: /decision-toolkit.svg
     alt: "Decision Toolkit"
   actions:
     - theme: brand
@@ -20,10 +20,12 @@ hero:
       link: /guide/getting-started
 
 features:
-  - title: DMN™
-    details: Evaluate, design, parse, validate, test and export the DMN™ compliant decision models.
+  - title: DMN™ compliant
+    details: Compliant with Decision&nbsp;Model&nbsp;and&nbsp;Notation™ standard.
+  - title: Decision models
+    details: Evaluate, design, parse, validate, test and export decision models.
   - title: Decision tables
-    details: Evaluate, design, parse, recognize, test and export decision tables.
+    details: Evaluate, design, parse, test, recognize and export decision tables.
   - title: FEEL expressions
     details: Evaluate, design, parse, test and export FEEL expressions.
 ---
