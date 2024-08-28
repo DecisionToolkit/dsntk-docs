@@ -14,29 +14,26 @@ decision tables evaluation, and FEEL expressions evaluation. It also includes fu
 and recognizing [DMN](https://www.omg.org/dmn)™ models, decision tables, and FEEL expressions.
 Users can test [DMN](https://www.omg.org/dmn)™ models, decision tables, and FEEL expressions, and export them to HTML.
 
-::: tip NOTE
-In this documentation we assume that you are using version <DsntkVersion/> (or later) of <DsntkName/>.
-Please visit the [Installation](installation) chapter to learn how to install or upgrade.
-:::
-
-## Main features
+## Features
 
 - [Serving DMN™ models](commands/command-srv) 
-- Evaluating DMN™ models
-- Evaluating decision tables
-- Evaluating FEEL expressions
-- Parsing and validating DMN™ models
-- Parsing and recognizing decision tables
-- Parsing and validating FEEL expressions
-- Testing DMN™ models
-- Testing decision tables
-- Testing FEEL expressions
-- Exporting DMN™ models to HTML
-- Exporting decision tables to HTML
-- Exporting FEEL expressions to HTML
+- [Evaluating DMN™ models](commands/command-edm)
+- [Evaluating decision tables](commands/command-edt)
+- [Evaluating FEEL expressions](commands/command-efe)
+- [Parsing DMN™ models](commands/command-pdm)
+- [Parsing decision tables](commands/command-pdt)
+- [Recognizing decision tables](commands/command-rdt)
+- [Parsing FEEL expressions](commands/command-pfe)
+- [Testing DMN™ models](commands/command-tdm)
+- [Testing decision tables](commands/command-tdt)
+- [Testing FEEL expressions](commands/command-tfe)
+- [Exporting DMN™ models](commands/command-xdm)
+- [Exporting decision tables](commands/command-xdt)
+- [Exporting FEEL expressions](commands/command-xfe)
 
-## Project status
+## Status
 
-&#8203;<DsntkName/> is production-ready, although some features might still be subject
-to change or refinement based on testing and user feedback. We welcome users to try
-&#8203;<DsntkName/> out and provide feedback or suggestions to improve its usability or performance.
+&#8203;<DsntkName/> is **PRODUCTION-READY**, although some features
+may still be refined or changed based on testing and user feedback.
+We encourage users to try <DsntkName/> and share their feedback
+to help us enhance its usability and performance.
