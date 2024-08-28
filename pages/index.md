@@ -16,11 +16,11 @@ hero:
       text: Installation
       link: /guide/installation
     - theme: alt
-      text: Getting Started
+      text: Getting started
       link: /guide/getting-started
 
 features:
-  - title: DMN™ compliant
+  - title: DMN™
     details: Compliant with Decision&nbsp;Model&nbsp;and&nbsp;Notation™ standard.
   - title: Decision models
     details: Evaluate, design, parse, validate, test and export decision models.

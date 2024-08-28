@@ -6,7 +6,7 @@ outline: 'deep'
 
 ## Command Cheat Scheat
 
-|       Action  |           DMN<br/>MODEL            |         DECISION<br/>TABLE         |        FEEL<br/>EXPRESSION         |              EXAMPLES              |
+|       Action  |         DECISION<br/>MODEL         |         DECISION<br/>TABLE         |        FEEL<br/>EXPRESSION         |              EXAMPLES              |
 |--------------:|:----------------------------------:|:----------------------------------:|:----------------------------------:|:----------------------------------:|
 |  **EVALUATE** | [**edm**](commands/command-edm.md) | [**edt**](commands/command-edt.md) | [**efe**](commands/command-efe.md) |                                    | 
 |     **PARSE** | [**pdm**](commands/command-pdm.md) | [**pdt**](commands/command-pdt.md) | [**pfe**](commands/command-pfe.md) |                                    |
@@ -76,7 +76,7 @@ For more details, refer to [Evaluating FEEL expressions](commands/command-efe.md
 
 #### pdm
 
-Parses DMN model.
+Parses DMN™ model.
 
 To display all available options of the [**pdm**](commands/command-pdm.md) command, enter:
 
@@ -114,7 +114,7 @@ For more details, refer to [Parsing FEEL expressions](commands/command-pfe.md).
 
 #### tdm
 
-Tests DMN model.
+Tests DMN™ model.
 
 To display all available options of the [**tdm**](commands/command-tdm.md) command, enter:
 
@@ -152,7 +152,7 @@ For more details, refer to [Testing FEEL expressions](commands/command-tfe.md).
 
 #### xdm
 
-Exports DMN model.
+Exports DMN™ model.
 
 To display all available options of the [**xdm**](commands/command-xdm.md) command, enter:
 

@@ -1,6 +1,6 @@
 # Getting started
 
-## Install built-in examples
+## Install examples
 
 &#8203;<DsntkName/> provides a set of examples ready to play with.
 To install the built-in examples in, e.g., the **examples** directory, just type:
@@ -19,11 +19,11 @@ $ cd ./examples/e1
 $ dsntk efe e1.ctx e1.feel
 ```
 
-```text
+```ansi
 3
 ```
 
-^subcommand-efe-ref
+For more details, refer to [Evaluating FEEL expressions](commands/command-efe.md).
 
 ## Evaluate DMN™ model
 
@@ -35,11 +35,11 @@ $ cd ./examples/e2
 $ dsntk edm e2.ctx e2.dmn -i "Greeting Message"
 ```
 
-```text
+```ansi
 "Hello John Doe"
 ```
 
-^subcommand-edm-ref
+For more details, refer to [Evaluating DMN™ models](commands/command-edm.md).
 
 ## Evaluate decision table
 
@@ -51,11 +51,11 @@ $ cd ./examples/e3
 $ dsntk edt e3.ctx e3.dtb
 ```
 
-```text
+```ansi
 0.15
 ```
 
-^subcommand-edt-ref
+For more details, refer to [Evaluating decision tables](commands/command-edt.md).
 
 ## Run as a service
 
@@ -67,7 +67,7 @@ $ cd ./examples/e2
 $ dsntk srv -v -H 127.0.0.1 -D .
 ```
 
-```text
+```ansi
 Found 1 model.
 Loaded 1 model.
 Deployed 1 invocable.
@@ -86,8 +86,8 @@ $ curl -s -d '{"Full Name": "John Doe"}' -H 'Content-Type: application/json' -X 
 
 Expected output:
 
-```text
+```ansi
 {"data":"Hello John Doe"}
 ```
 
-^subcommand-srv-ref
+For more details, refer to [Serving DMN™ models](commands/command-srv.md).

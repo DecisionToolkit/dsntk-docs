@@ -34,9 +34,19 @@ export default defineConfig({
         ]
       },
       {
-        text: 'References',
+        text: 'Metrics',
         items: [
-          { text: 'FEEL', collapsed: true, link: '/references/feel/feel'}
+          { text: 'Overview', link: '/metrics/overview'},
+          { text: 'DMN™ compatibility', link: '/metrics/dmn-compatibility'},
+          { text: 'Performance', link: '/metrics/performance'},
+          { text: 'Testing', link: '/metrics/testing'},
+        ]
+      },
+      {
+        text: 'v0.0.5',
+        items: [
+          { text: 'Release notes', link: 'https://github.com/DecisionToolkit/dsntk-rs/releases'},
+          { text: 'Changelog', link: 'https://github.com/DecisionToolkit/dsntk-rs/blob/v0.0.5/CHANGELOG.md'}
         ]
       }
     ],
@@ -66,16 +76,25 @@ export default defineConfig({
         ]
       },
       {
-        text: 'References',
+        text: 'Metrics', collapsed: true,
         items: [
-          { text: 'FEEL', collapsed: true, link: '/references/feel/feel',
+          { text: 'Overview', link: '/metrics/overview'},
+          { text: 'DMN™ compatibility', link: '/metrics/dmn-compatibility'},
+          { text: 'Performance', link: '/metrics/performance'},
+          { text: 'Testing', link: '/metrics/testing'},
+        ]
+      },
+      {
+        text: 'DMN™', collapsed: true,
+        items: [
+          { text: 'FEEL', collapsed: true, link: '/dmn/feel/feel',
             items: [
-              { text: 'Arithmetic', collapsed: true, link: '/references/feel/arithmetic/arithmetic',
+              { text: 'Arithmetic', collapsed: true, link: '/dmn/feel/arithmetic/arithmetic',
                 items: [
-                  { text: 'Addition', link: '/references/feel/arithmetic/addition' }
+                  { text: 'Addition', link: '/dmn/feel/arithmetic/addition' }
                 ]
               },
-              { text: 'Built-in functions', collapsed: true, link: '/references/feel/bifs/bifs'}
+              { text: 'Built-in functions', collapsed: true, link: '/dmn/feel/bifs/bifs'}
             ]
           }
         ]
