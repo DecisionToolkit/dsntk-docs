@@ -11,7 +11,10 @@ $ dsntk exs examples
 The resulting structure of directories and files should be similar to the one shown below:
 
 ```shell
-$ tree .
+$ tree
+```
+
+```ansi
 .
 └── examples
     ├── e1

@@ -36,10 +36,9 @@ export default defineConfig({
       {
         text: 'Metrics',
         items: [
-          { text: 'Overview', link: '/metrics/overview'},
           { text: 'DMN™ compatibility', link: '/metrics/dmn-compatibility'},
-          { text: 'Performance', link: '/metrics/performance'},
           { text: 'Testing', link: '/metrics/testing'},
+          { text: 'Performance', link: '/metrics/performance'}
         ]
       },
       {
@@ -78,10 +77,9 @@ export default defineConfig({
       {
         text: 'Metrics', collapsed: true,
         items: [
-          { text: 'Overview', link: '/metrics/overview'},
           { text: 'DMN™ compatibility', link: '/metrics/dmn-compatibility'},
-          { text: 'Performance', link: '/metrics/performance'},
           { text: 'Testing', link: '/metrics/testing'},
+          { text: 'Performance', link: '/metrics/performance'}
         ]
       },
       {
