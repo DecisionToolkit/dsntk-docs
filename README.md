@@ -1,6 +1,6 @@
-**DSNTK** | Decision Toolkit
+**dsntk** | Decision Toolkit
 
-## Decision Toolkit documentation
+## Documentation
 
 [![MIT licensed][mit-badge]][mit-url]
 [![Apache 2.0 licensed][apache-badge]][apache-url]
