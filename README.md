@@ -15,6 +15,7 @@
 [apache-notice-url]: NOTICE
 [cc-badge]: https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg
 [cc-url]: https://github.com/DecisionToolkit/dsntk-docs/blob/main/CODE_OF_CONDUCT.md
+[repository-url]: https://github.com/DecisionToolkit/dsntk-docs
 
 ## Overview
 
@@ -31,6 +32,6 @@ at your option.
 
 ## Contribution
 
-Any contributions to [**Decision Toolkit documentation**](https://github.com/DecisionToolkit/dsntk-docs) are greatly appreciated.
+Any contributions to [**Decision Toolkit documentation**][repository-url] are greatly appreciated.
 All contributions intentionally submitted for inclusion in the work by you,
 shall be dual licensed as above, without any additional terms or conditions.
