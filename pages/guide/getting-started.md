@@ -3,7 +3,7 @@
 ## Install examples
 
 &#8203;<DsntkName/> provides a set of examples ready to play with.
-To install the built-in examples in, e.g., the **examples** directory, just type:
+To install the built-in examples in, e.g., the **examples** directory, type:
 
 ```shell 
 $ dsntk exs examples

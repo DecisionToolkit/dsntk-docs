@@ -1,6 +1,6 @@
 # Serving DMN™ models
 
-The core function of the <DsntkName/> is serving <Dmn/> models.
+The core functionality of the <DsntkName/> is serving <Dmn/> models.
 The <Dmn/> specification precisely defines XML interchange format for decision models.
 XML files containing decision models are loaded and processed by <DsntkName/> server and exposed
 as a set of [JSON API](https://jsonapi.org) endpoints.
@@ -8,15 +8,16 @@ Each endpoint represents a single invocable defined in the decision model.
 Calling an endpoint is equivalent to executing a decision, business knowledge model
 or decision service.
 
-To explain in details, how to run and use the <DsntkName/> server (a.k.a. _DMN runtime_),
-we assume that <DsntkName/>'s built-in examples are saved in **examples** directory and the current
-directory contains only **examples** directory. When typed in terminal:
+To explain in details, how to run and use the <DsntkName/> server, we assume
+that the built-in examples are already saved in the **examples** directory
+and the current directory contains only the **examples** directory
+(see [Saving examples](command-exs.md) for details).
 
 ```shell
 $ ls
 ```
 
-The output should be:
+The expected output should be:
 
 ```ansi
 [34;1mexamples[0m
@@ -40,60 +41,68 @@ Expected output should look like this:
 ```
 
 &#8203;<DsntkName/> server is started. This server accepts connections from all available network
-interfaces **0.0.0.0** (default) and listens on port **22022** (default).
-During startup, the <DsntkName/> server scans the current working directory
-(default) and its subdirectories, and searches for decision models stored in XML
-files having **.dmn** extension.
+interfaces **0.0.0.0** and listens on port **22022**. During startup, the <DsntkName/> server
+scans the current directory with all its subdirectories, and searches for decision models
+stored as XML files having **.dmn** extension.
 
-In our example - during scanning - the <DsntkName/> server has found **examples** directory
-containing one subdirectory named **e2** with decision model file named **e2.dmn**. This file was loaded
+In our example, during directory scanning, the <DsntkName/> server has found the **examples** directory
+containing one subdirectory named **e2** with decision model file named **e2.dmn**. This file was loaded,
 and one invocable was deployed, a decision named **Greeting&nbsp;Message**.
 
 This invocable can be evaluated by calling the following endpoint:
 
-```text
-examples/e2/io/dsntk/2_0001/compliance-level-2-test-0001/Greeting%20Message
+```ansi
+http://0.0.0.0:22022/evaluate/examples/e2/io/dsntk/2_0001/compliance-level-2-test-0001/Greeting%20Message
 ```
 
-The list of all deployed invocables with endpoint names can be displayed during server startup
+To stop the <DsntkName/> server, press **Ctrl+C**.
+
+The list of all deployed invocables with the endpoint names can be displayed during server startup
 by specifying the option **-v** or **--verbose**, like shown below:
 
 ```shell
 $ dsntk srv -v
 ```
-```text
-Found 1 model.
-Loaded 1 model.
-Deployed 1 invocable.
 
-Deployed invocables:
-  examples/e2/io/dsntk/2_0001/compliance-level-2-test-0001/Greeting%20Message
+```ansi
+[32;1mFound 1 model.[0m
+[32;1mLoaded 1 model.[0m
+[32;1mDeployed 1 invocable.[0m
 
-dsntk 0.0.0.0:22022
+[33;1mDeployed invocables:[0m
+  [35;1mexamples[0m/[34;1me2/io/dsntk/2_0001[0m/[36;1mcompliance-level-2-test-0001[0m/[32;1mGreeting%20Message[0m
+
+[34;1mdsntk [33;1m0.0.0.0:22022[0m
 ```
 
-## Evaluating the invocable
+## Evaluating invocables
 
-Having the ^dt server started, the deployed invocable can be evaluated by calling an endpoint
-with required input data, using [**curl**](https://curl.se) for example:
+Having the <DsntkName/> server started, the deployed invocable can be evaluated by calling
+its endpoint with required input data, using, e.g. [**curl**](https://curl.se):
 
 ```shell
-$ curl -s -d "{\"Full Name\":\"John Doe\"}" \
+$ curl -s -d '{"Full Name":"John Doe"}' \
        -H "Content-Type: application/json" \
        -X POST http://0.0.0.0:22022/evaluate/examples/e2/io/dsntk/2_0001/compliance-level-2-test-0001/Greeting%20Message
 ```
-```text
+
+The expected output should be:
+
+```ansi
 {"data":"Hello John Doe"}
 ```
 
-The ^dt version of a [hello world](https://en.wikipedia.org/wiki/%22Hello,_World!%22_program)
+The <DsntkName/>'s version of a [hello world](https://en.wikipedia.org/wiki/%22Hello,_World!%22_program)
 program could look like this:
 
 ```shell
-$ curl -s -d "{\"Full Name\":\"world\"}" \
+$ curl -s -d '{"Full Name":"world"}' \
        -H "Content-Type: application/json" \
        -X POST http://127.0.0.1:22022/evaluate/examples/e2/io/dsntk/2_0001/compliance-level-2-test-0001/Greeting%20Message
 ```
+
+Expected output:
+
 ```text
 {"data":"Hello world"}
 ```
@@ -115,7 +124,7 @@ The full URL of the endpoint is composed of the following parts:
 
 - common endpoint name:
 
-  `evaluate`
+  **`evaluate`**
 
 - directory names where the file containing the DMN™ model was found during scanning:
 
@@ -125,7 +134,7 @@ The full URL of the endpoint is composed of the following parts:
 
   `io/dsntk/2_0001/compliance-level-2-test-0001`
 
-- invocable name:
+- the name of the invocable:
 
   `Greeting Message`
 

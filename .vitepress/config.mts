@@ -34,14 +34,6 @@ export default defineConfig({
         ]
       },
       {
-        text: 'Metrics',
-        items: [
-          { text: 'DMN™ compatibility', link: '/metrics/dmn-compatibility'},
-          { text: 'Testing', link: '/metrics/testing'},
-          { text: 'Performance', link: '/metrics/performance'}
-        ]
-      },
-      {
         text: 'v0.0.5',
         items: [
           { text: 'Release notes', link: 'https://github.com/DecisionToolkit/dsntk-rs/releases'},
@@ -72,29 +64,6 @@ export default defineConfig({
           { text: 'Testing FEEL expressions', link: '/guide/commands/command-tfe' },
           { text: 'Exporting FEEL expressions', link: '/guide/commands/command-xfe' },
           { text: 'Saving examples', link: '/guide/commands/command-exs' }
-        ]
-      },
-      {
-        text: 'Metrics', collapsed: true,
-        items: [
-          { text: 'DMN™ compatibility', link: '/metrics/dmn-compatibility'},
-          { text: 'Testing', link: '/metrics/testing'},
-          { text: 'Performance', link: '/metrics/performance'}
-        ]
-      },
-      {
-        text: 'DMN™', collapsed: true,
-        items: [
-          { text: 'FEEL', collapsed: true, link: '/dmn/feel/feel',
-            items: [
-              { text: 'Arithmetic', collapsed: true, link: '/dmn/feel/arithmetic/arithmetic',
-                items: [
-                  { text: 'Addition', link: '/dmn/feel/arithmetic/addition' }
-                ]
-              },
-              { text: 'Built-in functions', collapsed: true, link: '/dmn/feel/bifs/bifs'}
-            ]
-          }
         ]
       }
     ],

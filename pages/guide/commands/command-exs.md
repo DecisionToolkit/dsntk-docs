@@ -1,8 +1,7 @@
 # Saving examples
 
-^dt provides a set of examples ready to play with.
-
-To install examples in **examples** directory, enter:
+&#8203;<DsntkName/> provides a set of examples ready to play with.
+To install the built-in examples in, e.g., the **examples** directory, type:
 
 ```shell
 $ dsntk exs examples
@@ -15,15 +14,15 @@ $ tree
 ```
 
 ```ansi
-.
-└── examples
-    ├── e1
+[34;1m.[0m
+└── [34;1mexamples[0m
+    ├── [34;1me1[0m
     │   ├── e1.ctx
     │   └── e1.feel
-    ├── e2
+    ├── [34;1me2[0m
     │   ├── e2.ctx
     │   └── e2.dmn
-    └── e3
+    └── [34;1me3[0m
         ├── e3.ctx
         └── e3.dtb
 
