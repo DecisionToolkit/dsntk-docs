@@ -1,18 +1,17 @@
 # Overview
 
-&#8203;<DsntkName/> is a tool designed to build, test and evaluate decision models,
-constructed basing on the [Decision Model and Notation](https://www.omg.org/dmn) (DMN™) specification,
-which is an industry standard governed by the [Object Management Group](https://www.omg.org) (OMG®).
+&#8203;<DsntkName/> is a set of tools designed to build, test and evaluate decision models,
+constructed basing on the [Decision Model and Notation](https://www.omg.org/dmn) ([DMN](https://www.omg.org/dmn)™)
+specification, which is an industry standard governed by the [Object Management Group](https://www.omg.org) (OMG®).
 
-&#8203;<DsntkName/> aims to be performant, reliable, and fully compliant with the [DMN](https://www.omg.org/dmn)™
-specification, ensuring accurate evaluation of decision models.
-All tools are implemented in [Rust](https://www.rust-lang.org/), a programming language known for
-its security, efficiency and reliability.
+&#8203;<DsntkName/> aims to be performant, reliable, and fully compliant with the DMN™ specification,
+ensuring accurate evaluation of decision models. All tools are implemented in [Rust](https://www.rust-lang.org/),
+a programming language known for its security, efficiency and reliability.
 
-&#8203;<DsntkName/> offers a range of features, including [DMN](https://www.omg.org/dmn)™ models evaluation,
-decision tables evaluation, and FEEL expressions evaluation. It also includes functionality for parsing, validating,
-and recognizing [DMN](https://www.omg.org/dmn)™ models, decision tables, and FEEL expressions.
-Users can test [DMN](https://www.omg.org/dmn)™ models, decision tables, and FEEL expressions, and export them to HTML.
+&#8203;<DsntkName/> offers a range of features, including DMN™ models evaluation, decision tables evaluation,
+and FEEL expressions evaluation. It also includes functionality for parsing, validating, and recognizing DMN™ models,
+decision tables, and FEEL expressions. Users can test DMN™ models, decision tables, and FEEL expressions,
+and export them to HTML.
 
 ## Features
 
