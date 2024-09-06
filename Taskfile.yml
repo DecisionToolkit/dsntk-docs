@@ -9,6 +9,7 @@ tasks:
     cmds:
       - cmd: rm -rf .vitepress/cache
       - cmd: rm -rf .vitepress/dist
+      - cmd: rm -rf .deployment/app
 
   serve:
     desc: Start the documentation server locally
