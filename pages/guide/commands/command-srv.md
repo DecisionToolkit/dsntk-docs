@@ -34,10 +34,10 @@ $ dsntk srv
 Expected output should look like this:
 
 ```ansi
-[32;1mFound 1 model.[0m
-[32;1mLoaded 1 model.[0m
-[32;1mDeployed 1 invocable.[0m
-[34;1mdsntk [33;1m0.0.0.0:22022[0m
+[32mFound 1 model.[0m
+[32mLoaded 1 model.[0m
+[32mDeployed 1 invocable.[0m
+[34mdsntk[0m [33m0.0.0.0:22022[0m
 ```
 
 &#8203;<DsntkName/> server is started. This server accepts connections from all available network
@@ -65,14 +65,14 @@ $ dsntk srv -v
 ```
 
 ```ansi
-[32;1mFound 1 model.[0m
-[32;1mLoaded 1 model.[0m
-[32;1mDeployed 1 invocable.[0m
+[32mFound 1 model.[0m
+[32mLoaded 1 model.[0m
+[32mDeployed 1 invocable.[0m
+[33m
+Deployed invocables:[0m
+  [35mexamples/e2/[0m[34mio/dsntk/2_0001/[0m[36mcompliance-level-2-test-0001[0m/[32mGreeting%20Message[0m
 
-[33;1mDeployed invocables:[0m
-  [35;1mexamples[0m/[34;1me2/io/dsntk/2_0001[0m/[36;1mcompliance-level-2-test-0001[0m/[32;1mGreeting%20Message[0m
-
-[34;1mdsntk [33;1m0.0.0.0:22022[0m
+[34mdsntk[0m [33m0.0.0.0:22022[0m
 ```
 
 ## Evaluating invocables
