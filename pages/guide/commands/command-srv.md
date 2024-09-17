@@ -9,18 +9,13 @@ Calling an endpoint is equivalent to executing a decision, business knowledge mo
 or decision service.
 
 To explain in details, how to run and use the <DsntkName/> server, we assume
-that the built-in examples are already saved in the **examples** directory
-and the current directory contains only the **examples** directory
+that the built-in examples are already saved in the **~/examples** directory
 (see [Saving examples](command-exs.md) for details).
 
+Change to the directory containing the examples:
+
 ```shell
-$ ls
-```
-
-The expected output should be:
-
-```ansi
-[34;1mexamples[0m
+$ cd ~/examples
 ```
 
 ## Running a server
@@ -43,16 +38,16 @@ Expected output should look like this:
 &#8203;<DsntkName/> server is started. This server accepts connections from all available network
 interfaces **0.0.0.0** and listens on port **22022**. During startup, the <DsntkName/> server
 scans the current directory with all its subdirectories, and searches for decision models
-stored as XML files having **.dmn** extension.
+stored as XML files with **.dmn** extension.
 
-In our example, during directory scanning, the <DsntkName/> server has found the **examples** directory
-containing one subdirectory named **e2** with decision model file named **e2.dmn**. This file was loaded,
-and one invocable was deployed, a decision named **Greeting&nbsp;Message**.
+In our example, during directory scanning, the <DsntkName/> server has found the **dm** directory
+containing one decision model file named **dm.dmn**. This file was loaded, and one invocable was deployed,
+a decision named **Greeting&nbsp;Message**.
 
 This invocable can be evaluated by calling the following endpoint:
 
 ```ansi
-http://0.0.0.0:22022/evaluate/examples/e2/io/dsntk/2_0001/compliance-level-2-test-0001/Greeting%20Message
+http://0.0.0.0:22022/evaluate/dm/org/decision-toolkit/0001/Greeting%20Message
 ```
 
 To stop the <DsntkName/> server, press **Ctrl+C**.
@@ -70,38 +65,34 @@ $ dsntk srv -v
 [32mDeployed 1 invocable.[0m
 [33m
 Deployed invocables:[0m
-  [35mexamples/e2[0m/[36mio/dsntk/2_0001[0m/[35mcompliance-level-2-test-0001[0m/[36mGreeting%20Message[0m
+  [35mdm[0m/[36morg/decision-toolkit[0m/[35mgreetings[0m/[36mGreeting%20Message[0m
 
 [34mdsntk[0m [33m0.0.0.0:22022[0m
 ```
 
 ## Evaluating invocables
 
-Having the <DsntkName/> server started, the deployed invocable can be evaluated by calling
-its endpoint with required input data, using, e.g. [**curl**](https://curl.se):
+After starting the <DsntkName/> server, the deployed invocable can be evaluated by calling
+its endpoint with required input data, using, e.g. [**curl**](https://curl.se). In a separate terminal type:
 
 ```shell
-$ curl -s -d '{"Full Name":"John Doe"}' \
-       -H "Content-Type: application/json" \
-       -X POST http://0.0.0.0:22022/evaluate/examples/e2/io/dsntk/2_0001/compliance-level-2-test-0001/Greeting%20Message
+$ curl -s -d '{"Full Name":"Solomon L. Pollack"}' -H "Content-Type: application/json" -X POST http://0.0.0.0:22022/evaluate/dm/org/decision-toolkit/greetings/Greeting%20Message
 ```
 
 The expected output should be:
 
 ```ansi
-{"data":"Hello John Doe"}
+{"data":"Hello Solomon L. Pollack"}
 ```
 
 The <DsntkName/>'s version of a [hello world](https://en.wikipedia.org/wiki/%22Hello,_World!%22_program)
 program could look like this:
 
 ```shell
-$ curl -s -d '{"Full Name":"world"}' \
-       -H "Content-Type: application/json" \
-       -X POST http://127.0.0.1:22022/evaluate/examples/e2/io/dsntk/2_0001/compliance-level-2-test-0001/Greeting%20Message
+$ curl -s -d '{"Full Name":"world"}' -H "Content-Type: application/json" -X POST http://0.0.0.0:22022/evaluate/dm/org/decision-toolkit/greetings/Greeting%20Message
 ```
 
-Expected output:
+Expected output is:
 
 ```text
 {"data":"Hello world"}
@@ -110,42 +101,45 @@ Expected output:
 ## Endpoint names
 
 The common endpoint for evaluating invocables exposed by the <DsntkName/> server
-is named `evaluate`.
+is named **`evaluate/`**.
 
 The full URL of the endpoint is composed of the following parts:
 
-- protocol:
+- the protocol:
 
-  `http://` or `https://`
+  **`http://`** or **`https://`**
 
 - host address:
 
-  `0.0.0.0` or `127.0.0.1` or `my.domain.com`
+  **`0.0.0.0`** or **`127.0.0.1`** or **`my.domain.com/`** alike
 
 - common endpoint name:
 
-  **`evaluate`**
+  **`evaluate/`**
 
-- directory names where the file containing the DMN™ model was found during scanning:
+- path built from directory names where the file containing the DMN™ model was found during startup scanning:
 
-  `examples/e2`
+  **`dm/`**
 
 - model namespace converted to RDNN-like path:
 
-  `io/dsntk/2_0001/compliance-level-2-test-0001`
+  **`org/decision-toolkit/`**
+
+- model name:
+
+  **`greetings/`**
 
 - the name of the invocable:
 
-  `Greeting Message`
+  **`Greeting%20Message`**
 
 All parts put together give the following URL of the endpoint:
 
-`http://127.0.0.1:22022/evaluate/examples/e2/io/dsntk/2_0001/Greeting%20Message`
+```ansi
+[34mhttp://127.0.0.1:22022/evaluate/dm/org/decision-toolkit/greetings/Greeting%20Message[0m
+```
 
-::: info NOTE
-
-While not all characters are legal in URLs, there is `%20` between `Greeting` and `Message`,
+While not all characters are legal in URLs, there is `%20` pu between `Greeting` and `Message`,
 which represents a space in [percent-encoding](https://en.wikipedia.org/wiki/Percent-encoding).
 See [RFC3986](https://datatracker.ietf.org/doc/html/rfc3986#section-2.4) for more details.
 
-:::

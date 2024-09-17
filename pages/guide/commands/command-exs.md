@@ -10,21 +10,20 @@ $ dsntk exs examples
 The resulting structure of directories and files should be similar to the one shown below:
 
 ```shell
-$ tree
+$ tree examples
 ```
 
 ```ansi
-[34;1m.[0m
-└── [34;1mexamples[0m
-    ├── [34;1me1[0m
-    │   ├── e1.ctx
-    │   └── e1.feel
-    ├── [34;1me2[0m
-    │   ├── e2.ctx
-    │   └── e2.dmn
-    └── [34;1me3[0m
-        ├── e3.ctx
-        └── e3.dtb
+[01;34mexamples[0m
+├── [01;34mdm[0m
+│   ├── dm.ctx
+│   └── dm.dmn
+├── [01;34mdt[0m
+│   ├── dt.ctx
+│   └── dt.dtb
+└── [01;34mfe[0m
+    ├── fe.ctx
+    └── fe.feel
 
-5 directories, 6 files
+4 directories, 6 files
 ```
