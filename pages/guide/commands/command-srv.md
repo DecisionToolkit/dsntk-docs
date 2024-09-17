@@ -70,10 +70,9 @@ $ dsntk srv -v
 [32mDeployed 1 invocable.[0m
 [33m
 Deployed invocables:[0m
- [35mexamples/e2[0m/[34mio/dsntk/2_0001[0m/[36mcompliance-level-2-test-0001[0m/[32mGreeting%20Message[0m
+  [35mexamples/e2[0m/[36mio/dsntk/2_0001[0m/[35mcompliance-level-2-test-0001[0m/[36mGreeting%20Message[0m
 
 [34mdsntk[0m [33m0.0.0.0:22022[0m
-
 ```
 
 ## Evaluating invocables
