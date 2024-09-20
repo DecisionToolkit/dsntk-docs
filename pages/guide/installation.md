@@ -20,18 +20,21 @@ rename the downloaded binaries as shown below.
 
 ```shell [Linux (x86_64)]
 $ mv dsntk-0.0.8-linux-x86_64 dsntk
+$ chmod +x dsntk
 ```
 
 ```shell [Windows (x86_64)]
-> rename dsntk-0.0.8-windows-x86_64 dsntk
+> rename dsntk-0.0.8-windows-x86_64.exe dsntk.exe
 ```
 
 ```shell [macOs (x86_64)]
 $ mv dsntk-0.0.8-apple-macos-x86_64 dsntk
+$ chmod +x dsntk
 ```
 
 ```shell [macOs (ARM64)]
 $ mv dsntk-0.0.8-apple-macos-arm64 dsntk
+$ chmod +x dsntk
 ```
 
 :::
@@ -42,6 +45,6 @@ Install [Rust and Cargo](https://www.rust-lang.org/tools/install) and type:
 
 ::: code-group
 ```shell [TERMINAL]
-$ cargo install dsntk
+cargo install dsntk
 ```
 :::
