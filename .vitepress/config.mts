@@ -34,10 +34,10 @@ export default defineConfig({
         ]
       },
       {
-        text: 'v0.0.8',
+        text: 'v0.0.9',
         items: [
-          { text: 'Release', link: 'https://github.com/DecisionToolkit/dsntk-rs/releases/tag/v0.0.8'},
-          { text: 'Changelog', link: 'https://github.com/DecisionToolkit/dsntk-rs/blob/v0.0.8/CHANGELOG.md'}
+          { text: 'Release', link: 'https://github.com/DecisionToolkit/dsntk-rs/releases/tag/v0.0.9'},
+          { text: 'Changelog', link: 'https://github.com/DecisionToolkit/dsntk-rs/blob/v0.0.9/CHANGELOG.md'}
         ]
       }
     ],
