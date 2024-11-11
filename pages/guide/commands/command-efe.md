@@ -1,3 +1,3 @@
 # Evaluating FEEL expressions
 
-&#8203;<OnTheWay/>
+⏳ Detailed documentation is on the way.

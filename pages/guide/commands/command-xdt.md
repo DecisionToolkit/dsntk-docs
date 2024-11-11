@@ -1,3 +1,3 @@
 # Exporting decision tables
 
-&#8203;<OnTheWay/>
+⏳ Detailed documentation is on the way.
