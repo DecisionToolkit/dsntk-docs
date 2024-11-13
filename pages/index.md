@@ -21,7 +21,7 @@ hero:
 
 features:
   - title: DMN™
-    details: Compliant with Decision&nbsp;Model&nbsp;and&nbsp;Notation™ standard.
+    details: Compliant with Decision Model and Notation™ standard.
   - title: Decision models
     details: Evaluate, design, parse, validate, test and export decision models.
   - title: Decision tables
