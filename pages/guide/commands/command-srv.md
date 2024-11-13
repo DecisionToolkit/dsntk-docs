@@ -42,18 +42,12 @@ stored as XML files with **.dmn** extension.
 
 In our example, during directory scanning, the <span style="font-weight:bold;word-spacing:-0.15rem;">Decision Toolkit</span> server has found the **dm** directory
 containing one decision model file named **dm.dmn**. This file was loaded, and one invocable was deployed,
-a decision named **Greeting&nbsp;Message**.
-
-This invocable can be evaluated by calling the following endpoint:
-
-```ansi
-http://0.0.0.0:22022/evaluate/dm/org/decision-toolkit/0001/Greeting%20Message
-```
+a decision named `Greeting Message`.
 
 To stop the <span style="font-weight:bold;word-spacing:-0.15rem;">Decision Toolkit</span> server, press **Ctrl+C**.
 
-The list of all deployed invocables with the endpoint names can be displayed during server startup
-by specifying the option **-v** or **--verbose**, like shown below:
+The list of all deployed invocables with endpoint names can be displayed during server startup
+by specifying the option `-v` or `--verbose`, like shown below:
 
 ```shell
 $ dsntk srv -v
@@ -63,8 +57,8 @@ $ dsntk srv -v
 [32mFound 1 model.[0m
 [32mLoaded 1 model.[0m
 [32mDeployed 1 invocable.[0m
-[33m
-Deployed invocables:[0m
+
+[33mDeployed invocable:[0m
   [35mdm[0m/[36morg/decision-toolkit[0m/[35mgreetings[0m/[36mGreeting%20Message[0m
 
 [34mdsntk[0m [33m0.0.0.0:22022[0m
@@ -139,7 +133,6 @@ All parts put together give the following URL of the endpoint:
 [34mhttp://127.0.0.1:22022/evaluate/dm/org/decision-toolkit/greetings/Greeting%20Message[0m
 ```
 
-While not all characters are legal in URLs, there is `%20` pu between `Greeting` and `Message`,
+While not all characters are legal in URLs, there is `%20` between `Greeting` and `Message`,
 which represents a space in [percent-encoding](https://en.wikipedia.org/wiki/Percent-encoding).
 See [RFC3986](https://datatracker.ietf.org/doc/html/rfc3986#section-2.4) for more details.
-
