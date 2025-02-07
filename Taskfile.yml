@@ -11,11 +11,12 @@ tasks:
       - cmd: rm -rf .vitepress/dist
       - cmd: rm -rf .deployment/app
 
-  serve:
-    desc: Start the documentation server locally
+  install:
+    desc: Installs all npm modules
     cmds:
-      - task: clean
-      - cmd: npm run docs:dev
+      - cmd: rm -rf ./node_modules
+      - cmd: rm -rf ./package-lock.json
+      - cmd: npm install
 
   build:
     desc: Build the documentation
@@ -29,3 +30,9 @@ tasks:
       - task: clean
       - cmd: npm run docs:build
       - cmd: npm run docs:preview
+
+  serve:
+    desc: Start the documentation server locally
+    cmds:
+      - task: clean
+      - cmd: npm run docs:dev
