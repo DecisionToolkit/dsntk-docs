@@ -32,7 +32,7 @@ and export them to HTML.
 
 ## Status
 
-<span style="font-weight:bold;word-spacing:-0.15rem;">Decision Toolkit</span> is **PRODUCTION-READY**, although some features
+<span style="font-weight:bold;word-spacing:-0.15rem;">Decision Toolkit</span> is **PRODUCTION READY**, although some features
 may still be refined or changed based on testing and user feedback.
 We encourage users to try <span style="font-weight:bold;word-spacing:-0.15rem;">Decision Toolkit</span> and share their feedback
 to help us enhance its usability and performance.

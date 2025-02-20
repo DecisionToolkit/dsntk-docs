@@ -8,7 +8,6 @@ export default defineConfig({
     themeConfig: {
         logo: '/decision-toolkit-small.svg',
         nav: [
-            {text: 'Home', link: '/'},
             {
                 text: 'Guide',
                 items: [
@@ -34,12 +33,12 @@ export default defineConfig({
                 ]
             },
             {
-                text: 'v0.0.9',
+                text: 'v0.1.0',
                 items: [
-                    {text: 'Release', link: 'https://github.com/DecisionToolkit/dsntk-rs/releases/tag/v0.0.9'},
+                    {text: 'Release', link: 'https://github.com/DecisionToolkit/dsntk-rs/releases/tag/v0.1.0'},
                     {
                         text: 'Changelog',
-                        link: 'https://github.com/DecisionToolkit/dsntk-rs/blob/v0.0.9/CHANGELOG.md'
+                        link: 'https://github.com/DecisionToolkit/dsntk-rs/blob/v0.1.0/CHANGELOG.md'
                     }
                 ]
             }
