@@ -1,6 +1,6 @@
 # Installation
 
-<span style="font-weight:bold;word-spacing:-0.15rem;">Decision Toolkit</span> executable is a standalone file without additional dependencies and can be obtained by
+<span style="font-weight:bold;word-spacing:-0.15rem;">DecisionToolkit</span> executable is a standalone file without additional dependencies and can be obtained by
 downloading from [GitHub releases](https://github.com/dsntk/dsntk-rs/releases),
 or built from source using [Rust and Cargo](https://www.rust-lang.org/tools/install).
 
@@ -19,21 +19,21 @@ rename the downloaded binaries as shown below.
 ::: code-group
 
 ```shell [Linux (x86_64)]
-$ mv dsntk-0.1.0-linux-x86_64 dsntk
+$ mv dsntk-0.2.0-linux-x86_64 dsntk
 $ chmod +x dsntk
 ```
 
 ```shell [Windows (x86_64)]
-> rename dsntk-0.1.0-windows-x86_64.exe dsntk.exe
+> rename dsntk-0.2.0-windows-x86_64.exe dsntk.exe
 ```
 
 ```shell [macOs (x86_64)]
-$ mv dsntk-0.1.0-apple-macos-x86_64 dsntk
+$ mv dsntk-0.2.0-apple-macos-x86_64 dsntk
 $ chmod +x dsntk
 ```
 
 ```shell [macOs (ARM64)]
-$ mv dsntk-0.1.0-apple-macos-arm64 dsntk
+$ mv dsntk-0.2.0-apple-macos-arm64 dsntk
 $ chmod +x dsntk
 ```
 

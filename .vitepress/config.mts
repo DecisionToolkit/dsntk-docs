@@ -2,8 +2,8 @@ import {defineConfig} from 'vitepress'
 
 export default defineConfig({
     lang: 'en-US',
-    title: "Decision Toolkit",
-    description: "Decision Toolkit",
+    title: "DecisionToolkit",
+    description: "DecisionToolkit",
     head: [['link', {rel: 'icon', href: '/decision-toolkit-small.svg'}]],
     themeConfig: {
         logo: '/decision-toolkit-small.svg',
@@ -33,12 +33,12 @@ export default defineConfig({
                 ]
             },
             {
-                text: 'v0.1.0',
+                text: 'v0.2.0',
                 items: [
-                    {text: 'Release', link: 'https://github.com/DecisionToolkit/dsntk-rs/releases/tag/v0.1.0'},
+                    {text: 'Release', link: 'https://github.com/DecisionToolkit/dsntk-rs/releases/tag/v0.2.0'},
                     {
                         text: 'Changelog',
-                        link: 'https://github.com/DecisionToolkit/dsntk-rs/blob/v0.1.0/CHANGELOG.md'
+                        link: 'https://github.com/DecisionToolkit/dsntk-rs/blob/v0.2.0/CHANGELOG.md'
                     }
                 ]
             }

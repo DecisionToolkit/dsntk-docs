@@ -12,19 +12,18 @@ outline: 'deep'
 |     **PARSE** | [**pdm**](commands/command-pdm.md) | [**pdt**](commands/command-pdt.md) | [**pfe**](commands/command-pfe.md) |                                    |
 |      **TEST** | [**tdm**](commands/command-tdm.md) | [**tdt**](commands/command-tdt.md) | [**tfe**](commands/command-tfe.md) |                                    |
 |    **EXPORT** | [**xdm**](commands/command-xdm.md) | [**xdt**](commands/command-xdt.md) | [**xfe**](commands/command-xfe.md) |                                    |
-| **RECOGNIZE** |                                    | [**rdt**](commands/command-rdt.md) |                                    |                                    |
 |     **SERVE** | [**srv**](commands/command-srv.md) |                                    |                                    |                                    |
 |      **SAVE** |                                    |                                    |                                    | [**exs**](commands/command-exs.md) |
 
 ## Commands
 
-Below is a categorized list of all <span style="font-weight:bold;word-spacing:-0.15rem;">Decision Toolkit</span> commands.
+Below is a categorized list of all <span style="font-weight:bold;word-spacing:-0.15rem;">DecisionToolkit</span> commands.
 
 ### SERVE
 
 #### srv
 
-Runs <span style="font-weight:bold;word-spacing:-0.15rem;">Decision Toolkit</span> as a service and serves DMN™ decision models.
+Runs <span style="font-weight:bold;word-spacing:-0.15rem;">DecisionToolkit</span> as a service and serves DMN™ decision models.
 
 To display all available options of the [**srv**](commands/command-srv) command, type:
 
@@ -186,20 +185,6 @@ $ dsntk help xfe
 
 For more details, refer to [Exporting FEEL expressions](commands/command-xfe).
 
-### RECOGNIZE
-
-#### rdt
-
-Recognizes decision table.
-
-To display all available options of the [**rdt**](commands/command-rdt) command, enter:
-
-```shell
-$ dsntk help rdt
-```
-
-For more details, refer to [Recognizing decision tables](commands/command-rdt).
-
 ### SAVE
 
 #### exs
@@ -216,7 +201,7 @@ For more details, refer to [Saving examples](commands/command-exs).
 
 ## Options
 
-Below is a list of all <span style="font-weight:bold;word-spacing:-0.15rem;">Decision Toolkit</span> options.
+Below is a list of all <span style="font-weight:bold;word-spacing:-0.15rem;">DecisionToolkit</span> options.
 
 ### --help
 
